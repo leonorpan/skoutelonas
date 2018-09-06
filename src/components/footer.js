@@ -1,21 +1,25 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
-  <div
+const Footer = () => (
+  <footer
     style={{
-      background: '#E54B4B',
-      marginBottom: '1.45rem',
+      background: '#1E1E24',
+      position: 'absolute',
+      bottom: 0,
+      right: 0,
+      left: 0,
     }}
   >
     <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
+        position: 'relative',
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <p style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -23,11 +27,11 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          Copyright@2018
         </Link>
-      </h1>
+      </p>
     </div>
-  </div>
+  </footer>
 )
 
-export default Header
+export default Footer
