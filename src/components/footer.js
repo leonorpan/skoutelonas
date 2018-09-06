@@ -5,10 +5,7 @@ const Footer = () => (
   <footer
     style={{
       background: '#1E1E24',
-      position: 'absolute',
-      bottom: 0,
-      right: 0,
-      left: 0,
+      position: 'relative',
     }}
   >
     <div
